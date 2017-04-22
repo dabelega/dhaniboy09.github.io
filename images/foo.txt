@@ -1,0 +1,51 @@
+//window.onload = function(){
+
+/*
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+id = setInterval(showClockOnLoad, 1000);
+
+    showClockOnLoad();
+    function showClockOnLoad() {
+        var date = new Date;
+        showClock(date);
+    }
+
+
+setInterval(loadClock, 1000);
+loadClock;
+function loadClock(){
+  var now = new Date();
+  drawClock(now);
+}
+
+
+
+}
+var majorCities = {
+  tokyo : WAT,
+  newyork: CET,
+  saopaulo: CST
+}
+
+var timeZoneOffsets = {
+    "WAT": [1,"UTC+1"],
+    "CET": [1,"UTC+1"],
+    "CST": [-6,"UTC-6"]
+}
+
+
+
+
+  function getCountryTime(){
+    var timeZoneElement = document.getElementById("timeZones");
+    var timeZone = Number(timeZoneElement.value);
+    var tZoneoffset = returnTimeZoneOffset(timeZone);
+    //OBTAIN THE CURRENT DATE AND TIME
+    var testDate = new Date;
+    var localTime = testDate.getTime();
